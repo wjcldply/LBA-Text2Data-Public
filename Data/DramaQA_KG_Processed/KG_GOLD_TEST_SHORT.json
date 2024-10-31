@@ -1,0 +1,485 @@
+[
+    {
+        "sentence": "Haeyoung1 is sad.",
+        "objects": [
+            "Haeyoung1"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "feel",
+                "object2": "sad"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "feel",
+                "object2": "sad"
+            }
+        ]
+    },
+    {
+        "sentence": "Haeyoung1 is sad.",
+        "objects": [
+            "Haeyoung1"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "feel",
+                "object2": "sad"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "feel",
+                "object2": "sad"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung has bruises on his face.",
+        "objects": [
+            "Dokyung",
+            "face"
+        ],
+        "doubles": [
+            {
+                "object": "face",
+                "attribute": "bruise"
+            }
+        ],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "have",
+                "object2": "face"
+            }
+        ],
+        "gold": [
+            {
+                "object": "face",
+                "attribute": "bruise"
+            },
+            {
+                "object1": "Dokyung",
+                "relation": "have",
+                "object2": "face"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung has bruises on his face.",
+        "objects": [
+            "Dokyung",
+            "face"
+        ],
+        "doubles": [
+            {
+                "object": "face",
+                "attribute": "bruise"
+            }
+        ],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "have",
+                "object2": "face"
+            }
+        ],
+        "gold": [
+            {
+                "object": "face",
+                "attribute": "bruise"
+            },
+            {
+                "object1": "Dokyung",
+                "relation": "have",
+                "object2": "face"
+            }
+        ]
+    },
+    {
+        "sentence": "Haeyoung1 is asking a question to Dokyung.",
+        "objects": [
+            "Haeyoung1",
+            "Dokyung"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "ask",
+                "object2": "Dokyung"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "ask",
+                "object2": "Dokyung"
+            }
+        ]
+    },
+    {
+        "sentence": "Haeyoung1 is crying.",
+        "objects": [
+            "Haeyoung1",
+            "tears"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "cry",
+                "object2": "tears"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "cry",
+                "object2": "tears"
+            }
+        ]
+    },
+    {
+        "sentence": "Taejin is beating a person.",
+        "objects": [
+            "Taejin",
+            "person"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Taejin",
+                "relation": "beat",
+                "object2": "person"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Taejin",
+                "relation": "beat",
+                "object2": "person"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is hugging Haeyoung1.",
+        "objects": [
+            "Dokyung",
+            "Haeyoung1"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "hug",
+                "object2": "Haeyoung1"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Dokyung",
+                "relation": "hug",
+                "object2": "Haeyoung1"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is hugging Haeyoung1.",
+        "objects": [
+            "Dokyung",
+            "Haeyoung1"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "hug",
+                "object2": "Haeyoung1"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Dokyung",
+                "relation": "hug",
+                "object2": "Haeyoung1"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is talking to Haeyoung1.",
+        "objects": [
+            "Dokyung",
+            "Haeyoung1"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "talk",
+                "object2": "Haeyoung1"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Dokyung",
+                "relation": "talk",
+                "object2": "Haeyoung1"
+            }
+        ]
+    },
+    {
+        "sentence": "Haeyoung1 is walking.",
+        "objects": [
+            "Haeyoung1",
+            "walking"
+        ],
+        "doubles": [
+            {
+                "object": "walking",
+                "attribute": "?"
+            }
+        ],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "walk",
+                "object2": "?"
+            }
+        ],
+        "gold": [
+            {
+                "object": "walking",
+                "attribute": "?"
+            },
+            {
+                "object1": "Haeyoung1",
+                "relation": "walk",
+                "object2": "?"
+            }
+        ]
+    },
+    {
+        "sentence": "Haeyoung1 is crying in her room.",
+        "objects": [
+            "Haeyoung1",
+            "room"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "in",
+                "object2": "room"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "in",
+                "object2": "room"
+            }
+        ]
+    },
+    {
+        "sentence": "Haeyoung1 is crying in her room.",
+        "objects": [
+            "Haeyoung1",
+            "room"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "in",
+                "object2": "room"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Haeyoung1",
+                "relation": "in",
+                "object2": "room"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is running on the street.",
+        "objects": [
+            "Dokyung",
+            "street"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "run",
+                "object2": "street"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Dokyung",
+                "relation": "run",
+                "object2": "street"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is running on the street.",
+        "objects": [
+            "Dokyung",
+            "street"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "run",
+                "object2": "street"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Dokyung",
+                "relation": "run",
+                "object2": "street"
+            }
+        ]
+    },
+    {
+        "sentence": "Taejin is driving a car.",
+        "objects": [
+            "Taejin",
+            "car"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Taejin",
+                "relation": "drive",
+                "object2": "car"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Taejin",
+                "relation": "drive",
+                "object2": "car"
+            }
+        ]
+    },
+    {
+        "sentence": "Taejin is sitting in the car.",
+        "objects": [
+            "Taejin",
+            "car"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Taejin",
+                "relation": "sit in",
+                "object2": "car"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Taejin",
+                "relation": "sit in",
+                "object2": "car"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is wearing black clothes.",
+        "objects": [
+            "Dokyung",
+            "clothes"
+        ],
+        "doubles": [
+            {
+                "object": "clothes",
+                "attribute": "black"
+            }
+        ],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "wear",
+                "object2": "clothes"
+            }
+        ],
+        "gold": [
+            {
+                "object": "clothes",
+                "attribute": "black"
+            },
+            {
+                "object1": "Dokyung",
+                "relation": "wear",
+                "object2": "clothes"
+            }
+        ]
+    },
+    {
+        "sentence": "Taejin is driving a car in fury.",
+        "objects": [
+            "Taejin",
+            "car"
+        ],
+        "doubles": [
+            {
+                "object": "Taejin",
+                "attribute": "fury"
+            }
+        ],
+        "triples": [
+            {
+                "object1": "Taejin",
+                "relation": "drive",
+                "object2": "car"
+            }
+        ],
+        "gold": [
+            {
+                "object": "Taejin",
+                "attribute": "fury"
+            },
+            {
+                "object1": "Taejin",
+                "relation": "drive",
+                "object2": "car"
+            }
+        ]
+    },
+    {
+        "sentence": "Dokyung is sitting on the chair.",
+        "objects": [
+            "Dokyung",
+            "chair"
+        ],
+        "doubles": [],
+        "triples": [
+            {
+                "object1": "Dokyung",
+                "relation": "sit",
+                "object2": "chair"
+            }
+        ],
+        "gold": [
+            {
+                "object1": "Dokyung",
+                "relation": "sit",
+                "object2": "chair"
+            }
+        ]
+    }
+]

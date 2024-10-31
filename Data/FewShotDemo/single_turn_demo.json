@@ -1,0 +1,230 @@
+[
+    {
+        "input": "Dokyung is driving a car.",
+        "output": {
+            "gold": [
+                {
+                    "object1": "Dokyung",
+                    "relation": "drive",
+                    "object2": "car"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Sukyung is wearing white clothes.",
+        "output":{
+            "gold": [
+                {
+                    "object": "clothes",
+                    "attribute": "white"
+                },
+                {
+                    "object1": "Sukyung",
+                    "relation": "wear",
+                    "object2": "clothes"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Deogi is making the phone call with a smile.",
+        "output":{
+            "gold": [
+                {
+                    "object": "phone",
+                    "attribute": "call"
+                },
+                {
+                    "object1": "Deogi",
+                    "relation": "make",
+                    "object2": "phone"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Haeyoung2 is wearing a red tie.",
+        "output":{
+            "gold": [
+                {
+                    "object": "tie",
+                    "attribute": "red"
+                },
+                {
+                    "object1": "Haeyoung2",
+                    "relation": "wear",
+                    "object2": "tie"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Haeyoung2 is looking to the left.",
+        "output":{
+            "doubles": [
+                {
+                    "object": "Haeyoung2",
+                    "attribute": "looking left"
+                }
+            ],
+            "triples": [],
+            "gold": [
+                {
+                    "object": "Haeyoung2",
+                    "attribute": "looking left"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Sukyung is looking down with holding a cell phone.",
+        "output":{
+            "doubles": [
+                {
+                    "object": "Sukyung",
+                    "attribute": "looking down"
+                }
+            ],
+            "triples": [
+                {
+                    "object1": "Sukyung",
+                    "relation": "hold",
+                    "object2": "cell phone"
+                }
+            ],
+            "gold": [
+                {
+                    "object": "Sukyung",
+                    "attribute": "looking down"
+                },
+                {
+                    "object1": "Sukyung",
+                    "relation": "hold",
+                    "object2": "cell phone"
+                }
+            ]
+        }
+    },
+    {
+        "input":"A person is sitting on a couch talking.",
+        "output":{
+            "doubles": [
+                {
+                    "object": "person",
+                    "attribute": "talking"
+                }
+            ],
+            "triples": [
+                {
+                    "object1": "person",
+                    "relation": "sit on",
+                    "object2": "couch"
+                }
+            ],
+            "gold": [
+                {
+                    "object": "person",
+                    "attribute": "talking"
+                },
+                {
+                    "object1": "person",
+                    "relation": "sit on",
+                    "object2": "couch"
+                }
+            ]
+        }
+    },
+    {
+        "input":"The name of Haeyoung1 appears on the screen of his phone.",
+        "output":{
+            "doubles": [
+                {
+                    "object": "name",
+                    "attribute": "Haeyoung1"
+                },
+                {
+                    "object": "screen",
+                    "attribute": "phone"
+                }
+            ],
+            "triples": [
+                {
+                    "object1": "name",
+                    "relation": "appear",
+                    "object2": "screen"
+                }
+            ],
+            "gold": [
+                {
+                    "object": "name",
+                    "attribute": "Haeyoung1"
+                },
+                {
+                    "object": "screen",
+                    "attribute": "phone"
+                },
+                {
+                    "object1": "name",
+                    "relation": "appear",
+                    "object2": "screen"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Deogi is wearing black clothes.",
+        "output":{
+            "doubles": [
+                {
+                    "object": "clothes",
+                    "attribute": "black"
+                }
+            ],
+            "triples": [
+                {
+                    "object1": "Deogi",
+                    "relation": "wear",
+                    "object2": "clothes"
+                }
+            ],
+            "gold": [
+                {
+                    "object": "clothes",
+                    "attribute": "black"
+                },
+                {
+                    "object1": "Deogi",
+                    "relation": "wear",
+                    "object2": "clothes"
+                }
+            ]
+        }
+    },
+    {
+        "input":"Haeyoung1 is speaking in a emotional way.",
+        "output":{
+            "doubles": [
+                {
+                    "object": "Haeyoung1",
+                    "attribute": "emotional"
+                },
+                {
+                    "object": "Haeyoung1",
+                    "attribute": "speaking"
+                }
+            ],
+            "triples": [],
+            "gold": [
+                {
+                    "object": "Haeyoung1",
+                    "attribute": "emotional"
+                },
+                {
+                    "object": "Haeyoung1",
+                    "attribute": "speaking"
+                }
+            ]
+        }
+    }
+]
