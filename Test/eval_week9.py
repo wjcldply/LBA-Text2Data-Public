@@ -2,7 +2,7 @@ import sys
 import torch
 import numpy as np
 import json
-from LLaMA3_1.llama3_1_Tester_v5 import Tester_v5
+from LLaMA3_1.llama3_1_Tester_v6 import Tester_v6
 from .compare import compareNplot
 
 
@@ -135,7 +135,7 @@ def eval_KG(gold_dataset, extracted_dataset, schemas):
 def test_case(sample_sentences, sample_gold_KGs, few_shot_demos=None, schemas=None, isMultiTurn=False, label = 'None', model=None, openai_api_key=None, batch_size=1, lora_adapter_path=None):
     """for accuracy-based (exact matching) testing"""
     """입력파라메터 sample_sentences와 sample_gold_KGs는 둘 다 list of list of dicts임"""
-    tester = Tester_v5(list_of_sentences=sample_sentences, demonstrations=few_shot_demos, schemas=schemas, multiTurnQA=isMultiTurn, openai_api_key=openai_api_key, batch_size=batch_size, lora_adapter_path=lora_adapter_path)
+    tester = Tester_v6(list_of_sentences=sample_sentences, demonstrations=few_shot_demos, schemas=schemas, multiTurnQA=isMultiTurn, openai_api_key=openai_api_key, batch_size=batch_size, lora_adapter_path=lora_adapter_path)
     sample_extracted_KGs = tester.batch_inference()
 
     print(f'Counts || Sentences: {len(sample_sentences)} | Gold: {len(sample_gold_KGs)} | Extracted: {len(sample_extracted_KGs)}'); sys.stdout.flush()
