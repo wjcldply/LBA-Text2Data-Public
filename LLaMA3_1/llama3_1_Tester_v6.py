@@ -10,14 +10,7 @@ logging.set_verbosity_error()
 from tqdm import tqdm
 from pprint import pprint
 
-
-def parse_assistant(response):
-    # Use a regular expression to find content within square brackets
-    match = re.search(r'\[(.*?)\]', response)
-    if match:
-        return match.group(0)  # Return the whole match including brackets
-    # return None  # Return None if no match is found
-    return ""
+from tester_utils import parse_assistant
 
 class Tester_v6:
     """for accuracy-based (exact matching) comparison"""

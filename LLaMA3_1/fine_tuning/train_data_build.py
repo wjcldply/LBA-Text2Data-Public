@@ -13,6 +13,8 @@ from sklearn.model_selection import train_test_split
 import random
 random.seed(42)
 
+from data_utils import plot_token_count_distribution, split
+
 
 base_model_path = "meta-llama/Meta-Llama-3.1-8B-Instruct"
 PAD_TOKEN = "<|pad|>"
@@ -193,17 +195,6 @@ def count_Tokens(row: dict, column_name: str) -> int:
         )["input_ids"]
     )
 
-def plot_token_count_distribution(df_col):
-    plt.hist(df_col, weights=np.ones(len(df_col)) / len(df_col))
-    plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
-    # plt.xlabel("FewShot-Tokens")
-    plt.xlabel("Tokens")
-    plt.ylabel("Percentages")
-    print("Saving Plot for Maximum Token Length Distributions...")
-    plt.savefig(f"./Data/DramaQA_KG_Processed/TrainingData/Token_Counts_{df_col.name}.png")
-    plt.close()
-    print("Done")
-
 print("Processing: TrainData-Text Formatting (Uncompressed) (Schema + Demos + Q-A)")
 # Schema + Demos + Q-A
 tqdm.pandas(desc="Processing: Formatting (ZeroShot)"); df["Text_ZeroShot"] = df.progress_apply(lambda row: format_Data(row, "ZeroShot"), axis=1)
@@ -253,11 +244,6 @@ plot_token_count_distribution(df.Token_Count_FewShot)
 plot_token_count_distribution(df_compressed.Token_Count_ZeroShot_Compressed)
 plot_token_count_distribution(df_compressed.Token_Count_OneShot_Compressed)
 plot_token_count_distribution(df_compressed.Token_Count_FewShot_Compressed)
-
-def split(df):
-    train, temp = train_test_split(df, test_size=0.2)
-    val, test = train_test_split(temp, test_size=0.2)
-    return train.reset_index(drop=True), val.reset_index(drop=True), test.reset_index(drop=True)
 
 train_uncomp, val_uncomp, test_uncomp = split(df)
 train_comp, val_comp, test_comp = split(df_compressed)
